@@ -88,7 +88,7 @@ function getRandomAnswer() {
       `Вы загадали число ${answerNumber }`,
       `Уверен, что это число ${answerNumber }`,
       `Мои электроны подсказывают, что это число ${answerNumber }`,
-      `Точно! Правильное число ${answerNumber }`
+      `Ага! Правильное число ${answerNumber } ?`
    ];
    let answer = answers[Math.floor(Math.random() * 4)];
    return(answer);
