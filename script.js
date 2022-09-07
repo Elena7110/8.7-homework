@@ -1,7 +1,7 @@
 const answerField = document.getElementById('answerField'),
    orderNumberField = document.getElementById('orderNumberField'),
    firstPage = document.getElementById('firstPageId'),
-   secondPage = document.getElementById('seconPageId'),
+   secondPage = document.getElementById('secondPageId'),
    secondPageText = document.getElementById('secondPageText'),
    containerGame = document.querySelector('.container');
 
@@ -32,7 +32,7 @@ document.getElementById('btnEqual').addEventListener('click', function () {
 function startNewGame() {
    gameRun = true;
    firstPage.style.display = 'block';
-   secondPage.style.display = 'none';
+   secondPage.style.display= 'none';
    containerGame.style.display = 'none';
 
    document.getElementById('btnNext').addEventListener('click', function (event) {
