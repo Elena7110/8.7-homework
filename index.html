@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Угадайка</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+	<!--<div class="row game-card align-items-center">
+		<div class="col col-md-4 offset-md-4">
+			{# <div class="card text-center"> #}-->
+
+				<div class="first-page" id="firstPageId" tabindex="-1">
+					<div class="block-header">
+						<p class="m-0"><span>Игра "Угадай Число"</span></p>
+					</div>
+					<div class="block-body">
+						<div class="form-body">
+							<p id="formTextBody">Укажите диапазон чисел, необходимый для игры:</p>
+							<form>
+								<div class="form-group">
+									<input class="form-control form-control-sm" id="minValue" type="text"
+										placeholder="Нижняя граница">
+								</div>
+								<div class="form-group">
+									<input class="form-control form-control-sm" id="maxValue" type="text"
+										placeholder="Верхняя граница">
+								</div>
+							</form>
+						</div>
+						<div class="block-footer">
+							<button type="button" class="btn btn-info" id="btnNext">Далее</button>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="second-page" id="secondPageId" tabindex="-1">
+					<div class="block-header">
+						<p class="m-0"><span>Игра "Угадай Число"</span></p>
+					</div>
+					<div class="block-body">
+						<p class="text-center" id="secondPageText">Загадайте любое целое число от до, а я его угадаю!
+						</p>
+					</div>
+					<div class="block-footer">
+						<button type="button" class="btn btn-info" id="btnStartGame">Начать игру!</button>
+					</div>
+				</div>
+
+				<div class="questions container" id="questionsPage" tabindex="-1">
+					<div class="row game-card align-items-center">
+						<div class="col-md-3 col-md-6 offset-md-3">
+							<div class="card text-center">
+								<div class="block-header">
+									<p class="m-0">Вопрос №<span id="orderNumberField">5</span></p>
+								</div>
+								<div class="block-body">
+									<div class="row no-gutters">
+										<div class="col">
+											<h3 class="card-title m-0"><span id="answerField">Вы загадали число 5?</span></h3>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="block-body"> -->
+									<div class="btn-group">
+										<button class="btn btn-info" id="btnLess">меньше &#129047;</button>
+										<button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
+										<button class="btn btn-info" id="btnOver">&#129045; больше</button>
+									</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-footer">
+					<button class="btn btn-link" id="btnRetry">Заново</button>
+				</div>
+
+			<!--{# </div> #}
+		</div>
+	</div>-->
+
+	<script src="script.js"></script>
+</body>
+
+</html>
