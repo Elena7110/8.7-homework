@@ -11,14 +11,13 @@ let gameRun, minValue, maxValue, answerNumber, orderNumber;
 startNewGame();
 
 
-document.getElementById('btnNext').addEventListener('click', function () {
+document.getElementById('btnRetry').addEventListener('click', function () {
    startNewGame();
 });
 
 document.getElementById('btnOver').addEventListener('click', getNextAnswer);
 
 document.getElementById('btnLess').addEventListener('click', getNextAnswer);
-
 
 document.getElementById('btnEqual').addEventListener('click', function () {
    if (gameRun) {
