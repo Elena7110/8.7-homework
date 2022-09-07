@@ -1,4 +1,6 @@
-body{
+
+/* выравнивание формы игры по центру */
+body {
 	position: absolute;
 	padding: 30px;
 	top: 50%;
@@ -10,48 +12,63 @@ body{
 	width: 100%;
 }
 
+/* редактирование кнопок управления */
+#minValue,
+#maxValue {
+	width: auto;
+	margin: auto;
+}
+
+/* установка стилей первой страницы игры */
 #firstPageId {
-	height: 350px;
+	max-height: 350px;
 	display: block;
 }
 
+/* установка стилей второй страницы игры */
 #secondPageId {
 	display: none;
-	height: 350px;
+	height: 250px;
 	margin-bottom: 100px;
 }
 
-.block-body{
+/* установка стилей внутреннего сидержимого страницы игры */
+.block-body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	padding: 0 50px 50px;
 	justify-content: space-around;
-	
-
 }
 
-.block-footer{
+/* установка стилей подвала */
+.block-footer {
 	text-align: center;
 	margin: 0 auto;
 }
-.btn-group, .btn-info{
-border: 1px solid black;
+
+/* установка цвета кнопок управления */
+.btn-group,
+.btn-info {
+	border: 1px solid rgb(0, 186, 219);
 }
 
+/* стили параграфа  */
 #formTextBody {
 	padding-left: 10px;
 }
 
+/* сокрытие третьей страницы по умолчанию */
 .container {
 	display: none;
 }
 
+/* установка шрифта для третьей страницы игры */
 .game-card {
-	height: 100vh;
 	font-family: 'Open Sans', monospace;
 }
 
+/* параметры кнопок */
 #btnLess,
 #btnOver,
 #btnNext,
@@ -61,6 +78,7 @@ border: 1px solid black;
 	border: 1px solid rgb(133, 232, 250);
 }
 
+/* параметры кнопок при наведении */
 #btnLess:hover,
 #btnOver:hover,
 #btnNext:hover,
@@ -69,45 +87,58 @@ border: 1px solid black;
 	outline: none;
 }
 
+/* параметры кнопки подтверждения ответа */
 #btnEqual {
 	background-color: #bc0158;
 	border: 1px solid #bc0158;
 	outline: none;
 }
 
+/* параметры шапки */
 .block-header {
 	color: #bc0158;
 	font-size: 30px;
+	/* width: 100px; */
 }
 
+/* поле с выводом угаданного числа или предположения */
 #answerField,
 .block-body {
 	color: rgb(0, 186, 219);
 	font-size: 18px;
 }
 
-#btnRetry   {
+/* параметры элемета управления возвращением игры к началу */
+#btnRetry {
 	font-size: 20px;
-	color:  rgb(0, 132, 156);
+	color: rgb(0, 132, 156);
 }
 
+/* центрирование элементов третьего блока */
 .text-center {
 	background-color: rgb(204, 226, 252);
 }
 
-.card-header, .card-footer, .block-header, .block-footer {
+/* подкрашивание фона шапки и подвала страниц */
+.card-header,
+.card-footer,
+.block-header,
+.block-footer {
 	background: rgb(174, 174, 251);
+	display: block;
 }
 
-.first-page .block-footer{
+/* устранение фона под кнопками */
+.first-page .block-footer {
 	background: none;
 }
 
-.second-page .block-footer{
+/* устранение фона под кнопками */
+.second-page .block-footer {
 	background: none;
 }
 
-.btn-link {
-	/* font-size: 20px;
-	color:  rgb(154, 238, 253); */
+/* отступ для избежания наплыва формы на кнопку, шапку и подвал */
+.card {
+	margin: 50px 0px;
 }
