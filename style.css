@@ -13,15 +13,14 @@ body{
 #firstPageId {
 	height: 350px;
 	display: block;
-	border: 1px solid black;
 }
 
 #secondPageId {
 	display: none;
 	height: 350px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	/* display: flex; */
+	/* flex-direction: column;
+	justify-content: space-around; */
 	margin-bottom: 10px;
 }
 
@@ -29,8 +28,10 @@ body{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	padding:0 50px 50px;
+	padding: 0 50px 50px;
 	justify-content: space-around;
+	
+
 }
 
 .block-footer{
