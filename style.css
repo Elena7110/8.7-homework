@@ -18,7 +18,7 @@ body{
 #secondPageId {
 	display: none;
 	height: 350px;
-	margin-bottom: 10px;
+	margin-bottom: 100px;
 }
 
 .block-body{
@@ -89,7 +89,7 @@ border: 1px solid black;
 }
 
 .text-center {
-	background-color: rgb(215, 249, 255);
+	background-color: rgb(204, 226, 252);
 }
 
 .card-header, .card-footer, .block-header, .block-footer {

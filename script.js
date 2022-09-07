@@ -83,81 +83,32 @@ function getNextAnswer(btn) {
 }
 
 
-//Функция getRandomAnswer реализует функционал рандомного выбора ответов.
-// function getRandomAnswer() {
-//    let answers = [
-//       `Вы загадали число ${answerNumber }`,
-//       `Уверен, что это число ${answerNumber }`,
-//       `Мои электроны подсказывают, что это число ${answerNumber }`,
-//       `Точно! Правильное число ${answerNumber }`
-//    ];
-//    let answer = answers[Math.floor(Math.random() * 4)];
-//    return(answer);
-//    // answerField.innerText = answer;
-//    // gameRun = false;
-// };
-
-
+// Функция getRandomAnswer реализует функционал рандомного выбора ответов.
 function getRandomAnswer() {
-   let phraseRandom = Math.round(Math.random() * 3);
-   let questionPhrase;
-
-   switch (phraseRandom) {
-       case 0:
-           questionPhrase = `Вы загадали число${getTextOfNumber(answerNumber)}?`;
-           break;
-       case 1:
-           questionPhrase = `Мне кажется, что вы задумали число${getTextOfNumber(answerNumber)}?`;
-           break;
-       case 2:
-           questionPhrase = `Неужели это число${getTextOfNumber(answerNumber)}?`;
-           break;
-       case 3:
-           questionPhrase = `Это просто! Вы задумали число${getTextOfNumber(answerNumber)}?`;
-           break;
-   }
-
-   return questionPhrase;
-}
+   let answers = [
+      `Вы загадали число ${answerNumber }`,
+      `Уверен, что это число ${answerNumber }`,
+      `Мои электроны подсказывают, что это число ${answerNumber }`,
+      `Точно! Правильное число ${answerNumber }`
+   ];
+   let answer = answers[Math.floor(Math.random() * 4)];
+   return(answer);
+};
 
 
 
-//Функция getRandomWinMessage реализует функционал рандомного сообщения при отгадывании числа.
-// function getRandomWinMessage() {
-//    let words = [
-//       `Я всегда угадываю\n\u{1F60E}`,
-//       `Так и знал!\n\u{1F643}`,
-//       `Я умею читать мысли...\n\u{1F52E}`,
-//       `Ура! И снова я угадал!\n\u{1F973}`
-//    ];
-//    let word = words[Math.floor(Math.random() * 4)];
-//    return(word);
-//    // answerField.innerText = word;
-//    // gameRun = false;
-// };
-
-
+// Функция getRandomWinMessage реализует функционал рандомного сообщения при отгадывании числа.
 function getRandomWinMessage() {
-   let phraseRandom = Math.round(Math.random() * 3);
-   let questionPhrase;
+   let words = [
+      `Я всегда угадываю\n\u{1F60E}`,
+      `Так и знал!\n\u{1F643}`,
+      `Я умею читать мысли...\n\u{1F52E}`,
+      `Ура! И снова я угадал!\n\u{1F973}`
+   ];
+   let word = words[Math.floor(Math.random() * 4)];
+   return(word);
+};
 
-   switch (phraseRandom) {
-       case 0:
-           questionPhrase = `Я всегда угадываю\n\u{1F60E}`;
-           break;
-       case 1:
-           questionPhrase = `Я мастер-угадастер\n\u{1F60E}`;
-           break;
-       case 2:
-           questionPhrase = `Кто молодец? Я молодец\n\u{1F60E}`;
-           break;
-       case 3:
-           questionPhrase = `Это было просто\n\u{1F60E}`;
-           break;
-   }
-
-   return questionPhrase;
-}
 
 
 //Функция getTextOfNumber переводит числовую запись в текстовую.
